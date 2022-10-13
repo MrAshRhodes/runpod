@@ -10,6 +10,12 @@ gdrive version
 echo "Move notebook to workspace..."
 mv SD-NoteBook.ipynb /workspace/SD-NoteBook.ipynb
 
+echo "Install Filebrowser"
+curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
+filebrowser config init
+filebrowser users add runpod $JUPYTER_PASSWORD --perm.admin
+filebrowser -p 8000 -a 0.0.0.0 -r /workspace &
+
 if [[ $RP_API ]]
 then
     echo "Downloading runpodctl Binary..."
