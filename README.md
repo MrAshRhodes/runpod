@@ -7,7 +7,9 @@ Referral Link
 
 ### Automatic1111 Notebook Template on Runpod.io
 
-This is an environment and uses JupyterLab, very much like Google Colab.
+This is a environment and uses JupyterLab Notebook, very much like Google Colab.
+Where you have to run the "cells"
+
 Ive included
 
 - Web Based file browser - https://github.com/filebrowser/filebrowser
